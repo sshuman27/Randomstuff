@@ -1,55 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Services | CareFirst Health</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f7fa;
-      color: #333;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      color: #0077b6;
-      margin-top: 2rem;
-    }
-    .service {
-      background: white;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .service h3 {
-      margin-top: 0;
-    }
-    .service-icon {
-      font-size: 2rem;
-      margin-right: 0.5rem;
-      vertical-align: middle;
-      color: #0096c7;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #023e8a;
-      color: white;
-    }
-  </style>
+
 </head>
 <body>
   <header>
