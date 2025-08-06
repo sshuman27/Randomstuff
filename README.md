@@ -1,283 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Eloheh Healthcare - Our Story</title>
-  <style>
-    body {
-      font-family: 'Verdana', sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-      margin: 0; padding: 0;
-    }
+    <title>Eloheh Healthcare - Services</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
 
-    .banner {
-@@ -20,14 +19,14 @@
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
-    }
+        .banner {
+            background-color: #0000cc;
+            color: #ffffff;
+            height: 100px;
+        }
 
-    .banner h1 {
-      font-size: 36px;
-      font-family: 'Georgia', serif;
-      background-color: rgba(0, 0, 0, 0.4);
-      background: rgba(0,0,0,0.4);
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-@@ -38,15 +37,9 @@
-      padding: 20px;
-    }
+        .container {
+            width: 750px;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            padding: 10px;
+        }
 
-    h2 {
-      font-size: 22px;
-      color: #004c3f;
-    }
-    h2 { font-size: 22px; color: #004c3f; }
+        .button {
+            background-color: #0000cc;
+            color: #ffffff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid #000000;
+            font-weight: bold;
+        }
 
-    .highlight {
-      font-style: italic;
-      color: #0077b6;
-    }
-    .highlight { font-style: italic; color: #0077b6; }
-
-    .important {
-      font-weight: bold;
-@@ -55,10 +48,7 @@
-      color: #b22222;
-    }
-
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-    a { color: #0077b6; text-decoration: none; }
-
-    .download-btn {
-      display: inline-block;
-@@ -72,9 +62,7 @@
-      transition: background-color 0.3s ease;
-    }
-
-    .download-btn:hover {
-      background-color: #006b50;
-    }
-    .download-btn:hover { background-color: #006b50; }
-
-    img {
-      width: 100%;
-@@ -90,7 +78,6 @@
-      color: gray;
-    }
-
-    /* Collapsible section */
-    .collapsible {
-      background-color: #e6f1ed;
-      color: #004c3f;
-@@ -105,9 +92,7 @@
-      border-radius: 5px;
-    }
-
-    .collapsible:hover {
-      background-color: #d1e8e0;
-    }
-    .collapsible:hover { background-color: #d1e8e0; }
-
-    .content {
-      padding: 0 18px;
-@@ -118,38 +103,79 @@
-      margin-bottom: 20px;
-    }
-
-    /* Timeline */
-    .timeline {
-    /* Horizontal Timeline */
-    .timeline-horizontal {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: relative;
-      margin: 30px 0;
-      padding-left: 30px;
-      border-left: 4px solid #004c3f;
-      margin: 40px 0;
-      padding: 40px 0;
-      border-top: 4px solid #004c3f;
-    }
-
-    .timeline-event {
-      margin-bottom: 20px;
-    .timeline-horizontal::before {
-      content: '';
-      position: absolute;
-      top: 36px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: #004c3f;
-      z-index: 1;
-    }
-
-    .timeline-block {
-      position: relative;
-      flex: 1;
-      min-width: 220px;
-      padding: 20px;
-      text-align: center;
-      z-index: 2;
-    }
-
-    .timeline-event::before {
-    .timeline-block::before {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 0;
-      top: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 16px;
-      height: 16px;
-      background-color: #004c3f;
-      border-radius: 50%;
-      z-index: 3;
-    }
-
-    .timeline-event h4 {
-      margin: 0;
-    .timeline-block h4 {
-      margin: 20px 0 5px;
-      font-size: 18px;
-      color: #004c3f;
-    }
-
-    .timeline-event p {
-      margin: 5px 0 0 0;
-    .timeline-block p {
-      font-size: 14px;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      .timeline-horizontal {
-        flex-direction: column;
-        border-top: none;
-      }
-
-      .timeline-block {
-        border-left: 4px solid #004c3f;
-        margin-left: 20px;
-        padding-left: 20px;
-        text-align: left;
-      }
-
-      .timeline-block::before {
-        top: 0;
-        left: -12px;
-        transform: none;
-      }
-    }
-  </style>
+        a {
+            color: #0000ff;
+        }
+    </style>
 </head>
-@@ -167,67 +193,62 @@
-    <div class="content">
-      <p><span class="important">Eloheh Healthcare</span> was <u>established in 2015</u> with a mission to deliver inclusive, compassionate, and accessible healthcare to individuals from all walks of life.</p>
-      <p class="highlight">We began as a small, community-driven clinic and have evolved into a nationally trusted provider serving diverse populations through innovation and care.</p>
-      <p>The word <b>Eloheh</b> comes from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i> — a guiding principle in our approach to care. Founded by a team of nurses, public health advocates, and educators, Eloheh set out to bridge the gap in healthcare access through mobile units, culturally responsive services, and community education.</p>
-      <p>The word <b>Eloheh</b> comes from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i>. Founded by a team of nurses, public health advocates, and educators, Eloheh set out to bridge healthcare access gaps through mobile units, culturally responsive services, and community education.</p>
-    </div>
+<body>
 
-    <!-- Timeline: Our Journey -->
-    <!-- Horizontal Timeline -->
-    <h2>⏳ Our Journey Through the Years</h2>
-    <div class="timeline">
-      <div class="timeline-event">
-        <h4>2015–2016: Laying the Foundation</h4>
-        <p>Opened our first clinic in Portland. Hosted free community screenings and piloted a culturally inclusive care model.</p>
-    <div class="timeline-horizontal">
-      <div class="timeline-block">
-        <h4>2015–2016</h4>
-        <p>Laying the Foundation: First clinic in Portland, free screenings, inclusive care model.</p>
-      </div>
-      <div class="timeline-event">
-        <h4>2017–2019: Mobile Outreach</h4>
-        <p>Launched mobile wellness units, expanded multilingual telehealth services, and established school partnerships.</p>
-      <div class="timeline-block">
-        <h4>2017–2019</h4>
-        <p>Mobile Outreach: Wellness vans, multilingual telehealth, school partnerships.</p>
-      </div>
-      <div class="timeline-event">
-        <h4>2020–2021: Pandemic Response</h4>
-        <p>Rolled out testing and telemedicine during COVID-19. Created the Eloheh Cares relief fund and trained 200+ community health workers.</p>
-      <div class="timeline-block">
-        <h4>2020–2021</h4>
-        <p>Pandemic Response: COVID testing, virtual care, community health workers.</p>
-      </div>
-      <div class="timeline-event">
-        <h4>2022–2024: Innovation & Growth</h4>
-        <p>Launched our wellness app, began academic partnerships, and expanded to eight U.S. states.</p>
-      <div class="timeline-block">
-        <h4>2022–2024</h4>
-        <p>Innovation & Growth: Wellness app, research partnerships, 8-state expansion.</p>
-      </div>
-    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" bgcolor="#0000cc" height="100">
+                <font face="Arial" size="6" color="#ffffff"><b>Eloheh Healthcare Services</b></font>
+            </td>
+        </tr>
+    </table>
 
-    <!-- Collapsible: Looking Ahead -->
-    <button class="collapsible">🔮 Looking Ahead</button>
-    <div class="content">
-      <p>Eloheh Healthcare is shaping the future of wellness through policy advocacy, climate-resilient clinics, and telepsychology platforms. We continue to fight for equitable care, support elder communities, and bring compassion to every community we serve.</p>
-      <p>Eloheh Healthcare is shaping the future of wellness through policy advocacy, climate‑resilient clinics, and telepsychology platforms. We continue to fight for equitable care, support elder communities, and bring compassion to every community we serve.</p>
-    </div>
+    <center>
+        <div class="container">
+            <h2 align="center">Included Services</h2>
 
-    <!-- Image -->
-    <img src="https://via.placeholder.com/800x300.png?text=Eloheh+Team+and+Community+Wellness" alt="Eloheh Team Photo" />
-    <!-- Updated Team Photo -->
-    <img src="https://www.studentdoctor.net/wp-content/uploads/2007/10/shutterstock_317578871.png" alt="Eloheh Team Photo" />
+            <p><b>Eloheh Healthcare</b> helps people stay healthy with quality care and support. The services below are all available for any member of <b>Eloheh Healthcare</b>.</p>
 
-    <!-- External Link -->
-    <p>For more on global health efforts, visit the <a href="https://www.who.int" target="_blank">World Health Organization</a>.</p>
+            <ul>
+                <br>
+                <li><b><u><i>At-home healthcare</i></u></b></li>
+                <br>
+                <p>
+                    We provide a multitude of our best licensed professionals to provide at-home care specialized for you and
+                    <br>
+                    your loved ones. This can include anything from routine checkups to more serious care like administering
+                    <br>
+                    medicine, analyzing recovery steps, and repairing recovery wounds and ailments. This allows all patients to
+                    <br>
+                    recover and keep up with their own health in the comfort of their own home.
+                </p>
+                <br>
+                <li><b><u><i>Wellness programs</i></u></b></li>
+                <br>
+                <p>
+                    We offer structured programs to help guide any member and patient to a healthier and smarter lifestyle.
+                    <br>
+                    Included programs include physical programs to learn how to properly exercise with minimal weight and
+                    <br>
+                    bodyweight for easy at-home ease:
+                </p>
+                <br>
+                <ol>
+                    <li>Nutritional programs to learn the science for what a good functioning body needs to properly function everyday and healthy recipes to help maintain optimal health</li>
+                    <br>
+                    <li>Mental health training which is given through our top-notch licensed professionals to help emotionally support and help all patients in their time of need</li>
+                    <br>
+                    <li>Our addiction specialists which are pampered to help all individuals learn how to get off of their vices in the healthiest and safest way</li>
+                </ol>
+                <br>
+                <li><b><u><i>Medical Supply Delivery</i></u></b></li>
+                <br>
+                <p>
+                    We are obliged to ensure the highest quality medicine is sent straight to your doorstep so you don't have to 
+                    <br>
+                    wait longer and spend extra time to get your life-saving medicine. We ensure the speedy delivery of our 
+                    <br>
+                    production and allow all products to arrive weeks earlier than the end of your prescription to ensure you 
+                    <br>
+                    won't run out of medicine early and keep you healthy for longer. Many products will be offered at lower
+                    <br>
+                    rates than that at retail, from diabetes insulin, to wound bandages, and medically prescribed remedies, 
+                    <br>
+                    brought straight to your front door.
+                </p>
+                <br>
+                <li><b><u><i>Community outreach</i></u></b></li>
+                <br>
+                <p>
+                    We at Eloheh value the ability to be involved with each local community and make it our mission to serve 
+                    <br>
+                    each and every community we are graciously included in. We have done health fairs so people can learn 
+                    <br>
+                    more about how health works and how to improve one's own life through easy daily improvements, 
+                    <br>
+                    screenings for the local people who can't afford to get screenings on a normal occasion, and workshops to 
+                    <br>
+                    teach the youth about how the body works and guide them into the field of healthcare if they deem it 
+                    <br>
+                    proper. All of these events are with local community organizations to help everyone in the community 
+                    <br>
+                    prosper and improve the most they can. All events are free in our communities and are beneficial for each 
+                    <br>
+                    and every person in the community.
+                </p>
+            </ul>
 
-    <!-- Download Button -->
-    <p>
-      <a class="download-btn" href="eloheh_services_brochure.pdf" download>📄 Download Our Brochure</a>
-    </p>
-    <p><a class="download-btn" href="eloheh_services_brochure.pdf" download>📄 Download Our Brochure</a></p>
+            <p>Join us in our fight against Cancer, Donate to <a href="https://www.stjude.org/" target="_blank">St. Jude's</a>.</p>
 
-    <!-- Email Contact -->
-    <!-- Contact -->
-    <p><a href="mailto:contact@elohehhealth.org">📧 Contact Me</a></p>
-  </div>
+            <p>
+                <a class="button" href="eloheh_services_info.pdf" download>Full list of available services</a>
+            </p>
 
-  <footer>
-    <p>Last updated:
-      <script>
-        document.write(new Date(document.lastModified).toLocaleDateString());
-      </script>
-      <script>document.write(new Date(document.lastModified).toLocaleDateString());</script>
-    </p>
-  </footer>
+            <p>
+                <a href="mailto:sshuman@purdue.edu"><u>Have a Question?</u></a>
+            </p>
+        </div>
+    </center>
 
-  <!-- Collapsible Section Script -->
-  <!-- Collapsible Logic -->
-  <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-    collapsibles.forEach((btn) => {
-      btn.addEventListener("click", function () {
-    document.querySelectorAll(".collapsible").forEach(btn => {
-      btn.addEventListener("click", function() {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
-        const c = this.nextElementSibling;
-        c.style.display = c.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
+    <center>
+        <p><font size="2">Last updated: 
+            <script>
+                document.write(new Date(document.lastModified).toLocaleDateString());
+            </script>
+        </font></p>
+    </center>
+
+</body>
+</html>
